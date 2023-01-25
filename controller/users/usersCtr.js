@@ -4,7 +4,13 @@
 
 const userModel = require('../../models/userModel')
 
-// 响应
+/**
+ * 向请求方返回响应
+ * @param {ctx} ctx 
+ * @param {Number} code 
+ * @param {String} msg 
+ * @param {Object} data 
+ */
 const response = (ctx, code, msg, data) => {
     ctx.body = {
         code,
